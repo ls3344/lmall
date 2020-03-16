@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>lmall</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <description>The parent project of lmall</description>
+    <properties>
+        <lmall-common-version>1.0.0-SNAPSHOT</lmall-common-version>
+        <lmall-manager-version>1.0.0-SNAPSHOT</lmall-manager-version>
+        <lmall-web-version>1.0.0-SNAPSHOT</lmall-web-version>
+        <lmall-service-version>1.0.0-SNAPSHOT</lmall-service-version>
+        <lmall-api-version>1.0.0-SNAPSHOT</lmall-api-version>
+        <lmall-dao-version>1.0.0-SNAPSHOT</lmall-dao-version>
+        <junit-version>4.12</junit-version>
+        <spring-version>4.3.10.RELEASE</spring-version>
+        <apache-version>3.5</apache-version>
+        <maven-plugin-version>3.5.1</maven-plugin-version>
+        <ruhnn-basecenter-client-version>1.0.0-SNAPSHOT</ruhnn-basecenter-client-version>
+        <ruhnn-basecenter-common-version>1.0.0-SNAPSHOT</ruhnn-basecenter-common-version>
+
+        <log4j-version>1.2.17</log4j-version>
+        <slf4j-version>1.7.21</slf4j-version>
+        <redis-client-version>2.9.0</redis-client-version>
+        <spring-redis-version>1.7.2.RELEASE</spring-redis-version>
+        <memcached-version>2.12.3</memcached-version>
+        <jxl-version>2.6.12</jxl-version>
+        <!--utils -->
+        <poi-ooxml-version>3.10-FINAL</poi-ooxml-version>
+        <fastjson-version>1.2.12</fastjson-version>
+        <aliyun-sdk-version>2.6.1</aliyun-sdk-version>
+        <mail-version>1.5.6</mail-version>
+        <opencsv-version>3.9</opencsv-version>
+        <!--validator -->
+        <validator-version>5.4.1.Final</validator-version>
+        <javax-el-version>3.0.1-b08</javax-el-version>
+        <guava-version>23.0</guava-version>
+        <taobao-api-version>1.0-SNAPSHOT</taobao-api-version>
+        <dubbo-version>2.5.7</dubbo-version>
+        <javassit-version>3.21.0-GA</javassit-version>
+        <zkclent-version>0.4</zkclent-version>
+        <gson-version>2.8.1</gson-version>
+        <siwoo-monitor-version>1.0.0</siwoo-monitor-version>
+        <asp-version>1.8.10</asp-version>
+        <servlet-version>2.5</servlet-version>
+
+
+    </properties>
+
+    <modules>
+        <module>lmall-api</module>
+        <module>lmall-dao</module>
+        <module>lmall-common</module>
+        <module>lmall-manager</module>
+        <module>lmall-service</module>
+        <module>lmall-web</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-api</artifactId>
+                <version>${lmall-api-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-common</artifactId>
+                <version>${lmall-common-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-dao</artifactId>
+                <version>${lmall-dao-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-manager</artifactId>
+                <version>${lmall-manager-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-service</artifactId>
+                <version>${lmall-service-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>lmall-web</artifactId>
+                <version>${lmall-web-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo-version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.javassist</groupId>
+                        <artifactId>javassist</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassit-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.101tec</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclent-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi-ooxml-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi-ooxml-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${poi-ooxml-version}</version>
+            </dependency>
+
+
+            <!--guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava-version}</version>
+            </dependency>
+
+
+            <!--log -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j-version}</version>
+            </dependency>
+            <!-- apache -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>taobao</groupId>
+                <artifactId>taobao-sdk-taobaoke</artifactId>
+                <version>${taobaoke-sdk-version}</version>
+            </dependency>
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${asp-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${asp-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>2.2.2</version>
+            </dependency>
+
+            <!--test -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.10.19</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.9.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.9.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.9.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ruhnn</groupId>
+                <artifactId>siwoo-monitor</artifactId>
+                <version>${siwoo-monitor-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.jexcelapi</groupId>
+                <artifactId>jxl</artifactId>
+                <version>${jxl-version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!--共用jar包 不需要在子项目中依赖 -->
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-plugin-version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lmall-api:war">
+    <output-path>$PROJECT_DIR$/lmall-api/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lmall-api</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lmall-api-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lmall-api:war exploded" />
+    </root>
+  </artifact>
+</component>

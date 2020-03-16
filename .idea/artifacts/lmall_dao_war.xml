@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lmall-dao:war">
+    <output-path>$PROJECT_DIR$/lmall-dao/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lmall-dao</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lmall-dao-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lmall-dao:war exploded" />
+    </root>
+  </artifact>
+</component>

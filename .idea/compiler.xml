@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lmall-service" />
+        <module name="lmall-common" />
+        <module name="lmall-web" />
+        <module name="lmall-api" />
+        <module name="lmall-dao" />
+        <module name="lmall-manager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lmall" target="1.8" />
+      <module name="lmall-api" target="1.8" />
+      <module name="lmall-common" target="1.8" />
+      <module name="lmall-dao" target="1.8" />
+      <module name="lmall-manager" target="1.8" />
+      <module name="lmall-service" target="1.8" />
+      <module name="lmall-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

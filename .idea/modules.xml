@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/lmall.iml" filepath="$PROJECT_DIR$/.idea/lmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-api/lmall-api.iml" filepath="$PROJECT_DIR$/lmall-api/lmall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-common/lmall-common.iml" filepath="$PROJECT_DIR$/lmall-common/lmall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-dao/lmall-dao.iml" filepath="$PROJECT_DIR$/lmall-dao/lmall-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-manager/lmall-manager.iml" filepath="$PROJECT_DIR$/lmall-manager/lmall-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-service/lmall-service.iml" filepath="$PROJECT_DIR$/lmall-service/lmall-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-web/lmall-web.iml" filepath="$PROJECT_DIR$/lmall-web/lmall-web.iml" />
+    </modules>
+  </component>
+</project>
