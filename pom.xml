@@ -58,6 +58,7 @@
         <module>lmall-manager</module>
         <module>lmall-service</module>
         <module>lmall-web</module>
+        <module>lmall-task</module>
     </modules>
 
     <dependencyManagement>

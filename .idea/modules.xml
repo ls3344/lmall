@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/lmall-dao/lmall-dao.iml" filepath="$PROJECT_DIR$/lmall-dao/lmall-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmall-manager/lmall-manager.iml" filepath="$PROJECT_DIR$/lmall-manager/lmall-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmall-service/lmall-service.iml" filepath="$PROJECT_DIR$/lmall-service/lmall-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmall-task/lmall-task.iml" filepath="$PROJECT_DIR$/lmall-task/lmall-task.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmall-web/lmall-web.iml" filepath="$PROJECT_DIR$/lmall-web/lmall-web.iml" />
     </modules>
   </component>
