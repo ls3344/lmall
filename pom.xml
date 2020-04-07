@@ -17,7 +17,7 @@
         <lmall-api-version>1.0.0-SNAPSHOT</lmall-api-version>
         <lmall-dao-version>1.0.0-SNAPSHOT</lmall-dao-version>
         <junit-version>4.12</junit-version>
-        <spring-version>4.3.10.RELEASE</spring-version>
+        <spring-version>5.2.4.RELEASE</spring-version>
         <apache-version>3.5</apache-version>
         <maven-plugin-version>3.5.1</maven-plugin-version>
         <ruhnn-basecenter-client-version>1.0.0-SNAPSHOT</ruhnn-basecenter-client-version>
